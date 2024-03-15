@@ -10,12 +10,11 @@ down:
 ps:
 	docker-compose -f srcs/docker-compose.yml ps
 
-fclean: down
-	docker rm $$(docker ps -qa)
-	docker image rm -f $$(docker images ls -q)
+fclean: down 
+	docker image rm -f $$(docker image ls -q)
 	docker volume rm $$(docker volume ls -q)
 	docker system prune -a --force
-	sudo rm -rf /home/mmesbahi/Desktop/data
+	rm -rf /home/mmesbahi/Desktop/data
 
 re: fclean up
 
