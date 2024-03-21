@@ -17,8 +17,8 @@ fclean: down
 	@docker volume rm $$(docker volume ls -q) || echo "can't remove volumes"
 	@docker network rm $(docker network ls -q) 2>/dev/null || echo "can't remove networks"
 	@docker system prune -a --force
-	${sudo} rm -rf ${DB_VOL}
-	${sudo} rm -rf ${WP_VOL}
+	${SUDO} rm -rf ${DB_VOL}
+	${SUDO} rm -rf ${WP_VOL}
 re: fclean up
 
 ls:
