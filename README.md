@@ -40,7 +40,7 @@ Follow these steps to set up and run the project locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<username>/inception.git
+   git clone git@github.com:mme-sbahi/inception.git
    cd inception
    ```
 
