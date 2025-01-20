@@ -22,13 +22,13 @@ fclean: down
 re: fclean up
 
 ls:
-	@echo "- - - - - - - - - images - - - - - - - - - -"
+	@echo "- - - - - - - - - images - - - - - - - - - "
 	docker image ls
-	@echo "- - - - - - - - - volumes - - - - - - - - - -"
+	@echo "- - - - - - - - - volumes - - - - - - - - - "
 	docker volume ls
-	@echo "- - - - - - - - - networks - - - - - - - - - -"
+	@echo "- - - - - - - - - networks - - - - - - - - - "
 	docker network ls
-	@echo "- - - - - - - - - containers - - - - - - - - - -"
+	@echo "- - - - - - - - - containers - - - - - - - - - "
 	docker container ls
 
 .PHONY: all up down ps fclean re

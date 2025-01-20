@@ -77,7 +77,7 @@ Follow these steps to set up and run the project locally:
 
 - Docker and Docker Compose must be installed.
 - A running instance of the system using Docker.
-- Your project should run in a development container with multiple services (Nginx, database, PHP, etc.).
+- The project should run in a development container with multiple services (Nginx, database, PHP, etc.).
 
 
 ## Conclusion
